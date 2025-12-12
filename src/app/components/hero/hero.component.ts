@@ -45,9 +45,9 @@ export class HeroComponent {
 
   downloadCv() {
     const link = document.createElement('a');
-    link.href = 'assets/Amit_Resume.pdf';
+    link.href = 'assets/Amit_Rathode_Resume.pdf';
 
-    link.download = 'Amit_Resume.pdf';
+    link.download = 'Amit_Rathode_Resume.pdf';
     link.click();
   }
 
