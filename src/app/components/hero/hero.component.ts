@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
     <section id="home" class="hero-section">
       <div class="container">
         <h1>Full Stack <span class="highlight">Developer</span></h1>
-        <p>2+ Years of Experience | Java | Angular | Spring Boot | Node.js | Express.js</p>
+        <p>3 Years of Experience | Java | Angular | Spring Boot | Node.js | Express.js</p>
         <div>
                 <button class="btn btn-primary me-3">
                 <a href="https://github.com/amit-rathode-dev"
