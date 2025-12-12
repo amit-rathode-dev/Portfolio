@@ -24,7 +24,7 @@ import { CommonModule } from '@angular/common';
         </div>
         <div class="stats">
           <div class="stat-item">
-            <h3>2.5+</h3>
+            <h3>3</h3>
             <p>Years Experience</p>
           </div>
           <div class="stat-item">

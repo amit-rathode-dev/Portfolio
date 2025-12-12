@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
           </div>
           <div class="col-md-6">
             <p>
-              I'm a passionate full-stack developer with 2+ years of professional experience building scalable web applications. 
+              I'm a passionate full-stack developer with 3 years of professional experience building scalable web applications. 
               I specialize in creating robust backend systems and responsive frontend interfaces.
             </p>
             <p>
