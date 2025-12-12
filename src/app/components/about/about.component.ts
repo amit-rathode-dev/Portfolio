@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <h2>About Me</h2>
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="assets/developer-working.jpg" alt="Developer" class="img-fluid">
+            <img src="assets/dev-pic.jpeg" alt="Developer" class="img-fluid">
 
           </div>
           <div class="col-md-6">

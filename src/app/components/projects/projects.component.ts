@@ -19,15 +19,29 @@ import { CommonModule } from '@angular/common';
                 <div>
                   <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
                 </div>
-                <a href="#" class="project-link">View Project →</a>
-              </div>
+                <a *ngIf="!project.offline" [href]="project.link" target="_blank" class="project-link">View Project →</a>
+              <span *ngIf="project.offline" style='display: inline-block;
+                    padding: 4px 10px;
+                    background: #ffebee;
+                    color: #c62828;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    font-weight: 600;'>
+                    Server temporarily unavailable
+                  </span>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+
+
   `,
-  styles: []
+  styles: [
+
+  ]
 })
 export class ProjectsComponent {
   projects = [
@@ -35,25 +49,34 @@ export class ProjectsComponent {
       title: 'Tenant Management System',
       description: 'A comprehensive platform for managing tenant information, lease agreements, and maintenance requests.',
       technologies: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL'],
-      image: 'assets/portfolio-website-design.png?height=300&width=450'
+      image: 'assets/portfolio-website-design.png?height=300&width=450',
+      link: "http://ec2-44-201-165-23.compute-1.amazonaws.com/tenant-management-system/",
+      offline: true
+
     },
     {
       title: 'Sales & Lead Management',
       description: 'CRM application for tracking sales leads, managing customer relationships, and generating reports.',
       technologies: ['Node.js', 'Express.js', 'Angular', 'MySQL'],
-      image: 'assets/lead-management-crm-interface.jpg?height=300&width=400'
+      image: 'assets/lead-management-crm-interface.jpg?height=300&width=400',
+      link: "http://ec2-44-201-165-23.compute-1.amazonaws.com/Sales-application/",
+      offline: true
     },
     {
       title: 'Procurement Platform',
       description: 'Enterprise procurement system for managing vendor relationships, purchase orders, and inventory.',
       technologies: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL'],
-      image: 'assets/procurement-management-system.jpg?height=300&width=400'
+      image: 'assets/procurement-management-system.jpg?height=300&width=400',
+      link: "http://ec2-44-201-165-23.compute-1.amazonaws.com/Procrument-management/",
+      offline: true
     },
     {
       title: 'Freelancing Marketplace',
       description: 'Platform connecting freelancers with clients for project-based work and skill-based services.',
       technologies: ['Node.js', 'Express.js', 'Angular', 'MySQL'],
-      image: 'assets/freelance-marketplace-platform.jpg?height=300&width=400'
+      image: 'assets/freelance-marketplace-platform.jpg?height=300&width=400',
+      link: "https://sample-project-4084e.web.app/",
+      offline: false
     }
   ];
 }
