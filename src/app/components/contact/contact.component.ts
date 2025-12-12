@@ -67,7 +67,7 @@ import emailjs from 'emailjs-com';
             <div class="col-md-4">
               <div class="contact-info-item">
                 <p>Location</p>
-                <p>Your City, Country</p>
+                <p>Karve Nagar Pune</p>
               </div>
             </div>
           </div>
