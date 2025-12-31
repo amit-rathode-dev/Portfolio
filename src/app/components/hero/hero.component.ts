@@ -33,7 +33,7 @@ import { CommonModule } from '@angular/common';
             <p>Projects Completed</p>
           </div>
           </a>
-          <a class="nav-link" href="#skills">Skills
+          <a class="nav-link" href="#skills">
           <div class="stat-item">
             <h3>10+</h3>
             <p>Technologies</p>
