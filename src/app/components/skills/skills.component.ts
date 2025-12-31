@@ -35,12 +35,12 @@ export class SkillsComponent {
       skills: ['Angular','Syncfusion','PrimeNG','ApexChart','ChartJs','Bootstrap']
     },
     {
-      name: 'Database',
-      skills: ['PostgreSQL', 'MySQL',]
+      name: 'Tools & Principles',
+      skills: ['Docker','Git', 'SOLID', 'OOP','AWS Basics']
     },
     {
-      name: 'Tools & Principles',
-      skills: ['Docker','Git','Postman', 'SOLID', 'OOP']
+      name: 'Database',
+      skills: ['PostgreSQL', 'MySQL',]
     },
     
   ];

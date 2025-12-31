@@ -20,22 +20,26 @@ import { CommonModule } from '@angular/common';
             </a>
           </button>
 
-          <button class="btn btn-outline-primary" (click)="downloadCv()">Download CV</button>
+          <button class="btn btn-outline-primary " (click)="downloadCv()">Download CV</button>
         </div>
         <div class="stats">
           <div class="stat-item">
             <h3>3</h3>
             <p>Years Experience</p>
           </div>
+           <a class="nav-link" href="#projects">
           <div class="stat-item">
             <h3>5+</h3>
             <p>Projects Completed</p>
           </div>
+          </a>
+          <a class="nav-link" href="#skills">Skills
           <div class="stat-item">
             <h3>10+</h3>
             <p>Technologies</p>
-          </div>
-        </div>
+            </div>
+            </a>
+            </div>
       </div>
     </section>
   `,

@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <div class="row mb-4">
           <div class="col-md-4">
             <h3>Portfolio</h3>
-            <p>Full Stack Developer | 2.5+ Years Experience</p>
+            <p>Full Stack Developer | 3 Years Experience</p>
           </div>
           <div class="col-md-4">
             <h3>Quick Links</h3>
@@ -27,7 +27,7 @@ import { CommonModule } from '@angular/common';
             <div>
               <a href="https://github.com/amit-rathode-dev" class="me-3" target="_blank" rel="noopener noreferrer">GitHub</a>
               <a href="https://www.linkedin.com/in/amit-rathode-4474291b6/" class="me-3" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+              <a href="https://x.com/amitrathod_19" target="_blank" rel="noopener noreferrer">Twitter</a>
             </div>
           </div>
         </div>

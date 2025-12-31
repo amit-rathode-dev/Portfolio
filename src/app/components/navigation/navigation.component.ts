@@ -9,10 +9,11 @@ import { CommonModule } from '@angular/common';
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#home">Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"  (click)="isOpen = !isOpen">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        
+        <div class="collapse navbar-collapse" id="navbarNav" [class.show]="isOpen">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -33,4 +34,7 @@ import { CommonModule } from '@angular/common';
   `,
   styles: []
 })
-export class NavigationComponent {}
+export class NavigationComponent {
+
+   isOpen = false;
+}

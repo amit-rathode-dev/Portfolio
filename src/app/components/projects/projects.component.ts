@@ -12,14 +12,30 @@ import { CommonModule } from '@angular/common';
         <div class="row">
           <div class="col-md-6" *ngFor="let project of projects">
             <div class="project-card">
-              <img [src]="project.image" [alt]="project.title">
+            <a [href]="project.link" target="_blank"  class="text-decoration-none" >
+              <img [src]="project.image" [alt]="project.title" class="project-image"/>
               <div class="project-card-body">
                 <h3>{{ project.title }}</h3>
                 <p>{{ project.description }}</p>
                 <div>
                   <span class="tech-tag" *ngFor="let tech of project.technologies">{{ tech }}</span>
                 </div>
-                <a *ngIf="!project.offline" [href]="project.link" target="_blank" class="project-link">View Project →</a>
+                <a *ngIf="!project.offline" [href]="project.link" target="_blank" class="project-link">
+                  <span style='display: inline-block;
+                  align-items: center;
+                    padding: 4px 10px;
+                    background: #ffebee;
+                    color: #c62828;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    font-weight: 600;'>
+                  
+                   Visit Live Project  <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; →
+                  </span>
+                  
+              </a>
+
               <span *ngIf="project.offline" style='display: inline-block;
                     padding: 4px 10px;
                     background: #ffebee;
@@ -28,8 +44,11 @@ import { CommonModule } from '@angular/common';
                     border-radius: 4px;
                     font-weight: 600;'>
                     Server temporarily unavailable
+                    <br>
+                  Please try again shortly.
                   </span>
                 </div>
+                </a>
             </div>
           </div>
         </div>
@@ -50,7 +69,7 @@ export class ProjectsComponent {
       description: 'A comprehensive platform for managing tenant information, lease agreements, and maintenance requests.',
       technologies: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL'],
       image: 'assets/portfolio-website-design.png?height=300&width=450',
-      link: "http://ec2-44-201-165-23.compute-1.amazonaws.com/tenant-management-system/",
+      link: "http://192.168.140.82.compute-1.amazonaws.com/tenant-management-system/",
       offline: true
 
     },
@@ -59,7 +78,7 @@ export class ProjectsComponent {
       description: 'CRM application for tracking sales leads, managing customer relationships, and generating reports.',
       technologies: ['Node.js', 'Express.js', 'Angular', 'MySQL'],
       image: 'assets/lead-management-crm-interface.jpg?height=300&width=400',
-      link: "http://ec2-44-201-165-23.compute-1.amazonaws.com/Sales-application/",
+      link: "http://192.168.140.82.compute-1.amazonaws.com/Sales-application/",
       offline: true
     },
     {
@@ -67,7 +86,7 @@ export class ProjectsComponent {
       description: 'Enterprise procurement system for managing vendor relationships, purchase orders, and inventory.',
       technologies: ['Java', 'Spring Boot', 'Angular', 'PostgreSQL'],
       image: 'assets/procurement-management-system.jpg?height=300&width=400',
-      link: "http://ec2-44-201-165-23.compute-1.amazonaws.com/Procrument-management/",
+      link: "http://192.168.140.82.compute-1.amazonaws.com/Procrument-management/",
       offline: true
     },
     {

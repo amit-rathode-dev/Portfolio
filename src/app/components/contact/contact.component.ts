@@ -61,7 +61,7 @@ import emailjs from 'emailjs-com';
             <div class="col-md-4">
               <div class="contact-info-item">
                 <p>Phone</p>
-                <p>+1 (555) 123-4567</p>
+                <p>7448052417</p>
               </div>
             </div>
             <div class="col-md-4">
