@@ -335,3 +335,9 @@ footer ul li {
   text-align: center;
   color: #94a3b8;
 }
+
+.form-control::placeholder {
+  color: #ebeef1;       /* light gray */
+  font-size: 0.9rem;
+ 
+}

@@ -32,15 +32,15 @@ export class SkillsComponent {
     },
     {
       name: 'Frontend',
-      skills: ['Angular','Syncfusion','PrimeNG','ApexChart','ChartJs','Bootstrap']
+      skills: ['Angular','Syncfusion','PrimeNG','ApexChart','Chart.Js','Bootstrap']
     },
     {
       name: 'Tools & Principles',
-      skills: ['Docker','Git', 'SOLID', 'OOP','AWS Basics']
+      skills: ['Docker','Git', 'SOLID', 'OOP','Firebase','AWS Basics','System Design-Basics (LLD)']
     },
     {
-      name: 'Database',
-      skills: ['PostgreSQL', 'MySQL',]
+      name: 'Database & Other Technologies',
+      skills: ['PostgreSQL', 'MySQL','RESTful APIs','SAP Sales Cloud','SAP Service Cloud','Emarsys' ]
     },
     
   ];

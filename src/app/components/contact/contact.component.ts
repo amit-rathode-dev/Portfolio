@@ -19,6 +19,7 @@ import emailjs from 'emailjs-com';
                 <label class="form-label">Name</label>
                 <input 
                   type="text" 
+                  placeHolder="Enter Your Name"
                   class="form-control" 
                   [(ngModel)]="formData.name" 
                   name="Your Name"
@@ -29,6 +30,7 @@ import emailjs from 'emailjs-com';
                 <label class="form-label">Email</label>
                 <input 
                   type="email" 
+                  placeHolder="Enter Your email"
                   class="form-control" 
                   [(ngModel)]="formData.email" 
                   name="Enter Your email"
@@ -39,6 +41,7 @@ import emailjs from 'emailjs-com';
                 <label class="form-label">Message</label>
                 <textarea 
                   class="form-control" 
+                 placeholder="Write your message. I’ll get back to you by email."
                   rows="5"
                   [(ngModel)]="formData.message" 
                   name="Write the Message"
